@@ -1,16 +1,13 @@
-"use client"
-import { AuthContext } from "@/context/auth"
-import { useContext } from "react";
+import Counter from "./counter";
 
 const Header = () => {
-    const { count } = useContext(AuthContext)
-    return ( 
-        <header className="mx-auto h-16 w-full bg-red-300 flex px-20 py-2 justify-around items-center">
-            <span>My Header</span>
+  return (
+    <header className="mx-auto h-16 w-full bg-red-500 flex px-20 py-2 justify-around items-center">
+      <span>My Header</span>
 
-            <span>{count}</span>
-        </header>
-     );
-}
- 
+      <Counter />
+    </header>
+  );
+};
+
 export default Header;

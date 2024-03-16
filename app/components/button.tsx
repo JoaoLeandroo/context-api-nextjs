@@ -20,7 +20,7 @@ const Button = () => {
   };
 
   const increment = () => {
-    if (count >= 15) {
+    if (count >= 10) {
       alert("Número máximo de itens atingido!");
       return;
     }
@@ -42,7 +42,7 @@ const Button = () => {
         Decrement
       </button>
 
-      <button onClick={update}>Novo item array</button>
+      <button className="p-3 rounded-xl border hover:bg-slate-400 transition duration-300" onClick={update}>Novo item array</button>
     </div>
   );
 };
